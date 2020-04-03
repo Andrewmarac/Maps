@@ -3,11 +3,21 @@
 <agm-map [latitude]="lat" [longitude]="lng">
   <!--Mettiamo un marker alle nostre coordinate-->
   <agm-marker [latitude]="lat" [longitude]="lng" [iconUrl]="icon">
+
   </agm-marker>
 
   <agm-circle [latitude]="lat" [longitude]="lng"
       [radius]="5000"
-      [fillColor]="'red'">
+      [fillColor]="colorCerchio">
   </agm-circle>
 
+  <agm-polygon [paths]="triangle" [fillColor]="'colorRetta'">
+  </agm-polygon>
+
 </agm-map>
+<button (click)="redColor()">red circle</button>
+<button (click)="greenColor()">green cirle</button>
+<button (click)="blueColor()">blue circle</button>
+<button (click)="violetColorett()">violet rect</button>
+<button (click)="yellowColorRett()">yellow rect</button>
+<button (click)="orangeColorRett()">orange rect</button>
