@@ -10,4 +10,13 @@ export class AppComponent {
   //Aggiungiamo latitudine e longitudine di un luogo
   lat: number = 45.506738;
   lng: number = 9.190766;
+
+   icon =  {
+    url:'./assets/img/cat_acrobat.ico',
+    scaledSize: {
+      width: 60,
+      height: 60
+    }
+  };
+
 }
